@@ -25,4 +25,7 @@ def solve(f,x0,h):
         xn1=xn1-f(xn1)/derivative(f,xn1,h)
     return xn1
 
-print(solve(f4,3,0.00000001))
+print(solve(f4,-20,0.00000001))
+
+import d0028e_lab2_solveTest
+

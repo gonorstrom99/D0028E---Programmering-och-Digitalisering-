@@ -1,7 +1,16 @@
 def tvarsumman(x):
-    if x<10:
-        return x
-    else:
-        return x//10+tvarsumman(x%10)
+    ans=0
+    while x>0:
+        
+        ans=ans+x%10
+        x=x//10
     
-print(tvarsumman(12))
+    return ans
+
+    # if x<10:
+    #     return x
+    # else:
+    #     return x//10+tvarsumman(x%10)
+    
+print(tvarsumman(253))
+import d0028e_lab2_sumTest
